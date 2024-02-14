@@ -1,7 +1,7 @@
     const messaging = firebase.messaging();
     messaging.usePublicVapidKey("BPDtXmNweWHXRbOGngz8XqgZOO81p3HnrN5xqwZmqcUCwyOc9Ltzl6hDF0INpicDyKQRoCqIaaXXxByUrSIhqbg");
     function sendTokenToServer(fcm_token) {
-        const userId = window.userId;
+        const user_id = window.userId;
         axios.post('/api/save-token', {
             fcm_token, user_id
         })
